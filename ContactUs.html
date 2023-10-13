@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navitems">VOrgreens</div>
+            <div class="navitems"><a class="navlink" href="Home.html">Home</a></div>
+            <div class="navitems"><a class="navlink" href="Menu.html">Menu</a></div>
+            <div class="navitems"><a class="navlink" href="FindUs.html">Find Us</a></div>
+            <div class="navitems"><a class="navlink" href="ContactUs.html">Contact Us</a></div>
+            <div class="navitems"><a class="navlink" href="AboutUs.html">About Us</a></div>
+        </nav>
+    </header>
+   
+   <section id="titlesection">
+        <p class="title">Contact Us</p>
+   </section> 
+
+   <form method="POST">
+        <div id="namesection">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div id="emailsectiom">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Binusian Email">
+        </div>
+        <div id="gendersection">
+            <label for="gender">Gender</label><br> 
+            <input type="radio" name="gender" id="male">
+            <label for="gender" class="genderlabel">Male</label><br>
+            <input type="radio" name="gender" id="female">
+            <label for="gender" class="genderlabel">Female</label><br>
+        </div>
+        <div id="messagesection">
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="75" rows="10" placeholder="Write your message here"></textarea>
+        </div>
+        <div id="checkboxsection">
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe" id="sublabel">Subscribe to VOrgreen's newsletter.</label><br>
+        </div>
+        <button type="button" onclick="validasi()" id="button">Submit</button>
+   </form>
+
+    <footer>
+        <p><i>Providing quality food with the freshest of ingredients</i></p>
+        <p id="time"></p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
